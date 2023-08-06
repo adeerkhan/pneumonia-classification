@@ -14,6 +14,9 @@ st.title('Pneumonia Classification App')
 # set header
 st.header('Please upload a chest X-ray image or select an example from the tabs.')
 
+# upload file
+file = st.file_uploader('', type=['jpeg', 'jpg', 'png'])
+
 tab1, tab2, tab3 = st.tabs(["Normal", "Suspicious/Initial", "Severe"])
 
 with tab1:
@@ -30,9 +33,6 @@ with tab3:
    st.header("Severe")
    st.write("[Case courtesy of Callum Smith](https://radiopaedia.org/articles/pneumonia)")
    st.image("./images/severe.jpg", width=400)
-
-# upload file
-file = st.file_uploader('', type=['jpeg', 'jpg', 'png'])
 
 # load classifier
 model = load_model('./model/pneumonia_classifier.h5')

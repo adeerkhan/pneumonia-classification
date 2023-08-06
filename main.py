@@ -22,7 +22,7 @@ expander.write(\"\"\"
 expander.image("./images/1.jpg", "./images/2.jpg", "./images/3.jpg", "./images/4.jpg", "./images/5.jpg")
 
 # upload file
-file = st.file_uploader('', type=['jpeg', 'jpg'Pp, 'png'])
+file = st.file_uploader('', type=['jpeg', 'jpg', 'png'])
 
 # load classifier
 model = load_model('./model/pneumonia_classifier.h5')
@@ -43,4 +43,3 @@ if file is not None:
     # write classification
     st.write("## {}".format(class_name))
     st.write("### score: {}%".format(int(conf_score * 1000) / 10))
-

@@ -12,9 +12,9 @@ set_background('./bgs/background.png')
 st.title('Pneumonia Classification App')
 
 # set header
-st.header('Please upload a chest X-ray image')
+st.header('Please upload a chest X-ray image or select the the example ones from the tabs.')
 
-tab1, tab2, tab3 = st.tabs(["Cat", "Dog", "Owl"])
+tab1, tab2, tab3 = st.tabs(["Normal", "Suspicious/Initial", "Severe"])
 
 with tab1:
    st.header("Normal")

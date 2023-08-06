@@ -6,13 +6,20 @@ import numpy as np
 from util import classify, set_background
 
 
-set_background('./bgs/bg5.png')
+set_background('./bgs/background.png')
 
 # set title
-st.title('Pneumonia classification')
+st.title('Pneumonia Classification App')
 
 # set header
 st.header('Please upload a chest X-ray image')
+
+expander = st.expander("Try Example Images?")
+expander.write(\"\"\"
+    The following images can be used to check the model.
+    Case courtesy of Callum Smith, <a href="https://radiopaedia.org/?lang=us">Radiopaedia.org</a>.
+\"\"\")
+expander.image("./images/1.jpg", "./images/2.jpg", "./images/3.jpg", "./images/4.jpg", "./images/5.jpg")
 
 # upload file
 file = st.file_uploader('', type=['jpeg', 'jpg'Pp, 'png'])
@@ -36,3 +43,4 @@ if file is not None:
     # write classification
     st.write("## {}".format(class_name))
     st.write("### score: {}%".format(int(conf_score * 1000) / 10))
+

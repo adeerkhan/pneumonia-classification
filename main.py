@@ -18,9 +18,13 @@ expander = st.expander("Try Example Images?")
 expander.write("""
     The following images can be used to check the model.
     
-    [Case courtesy of Callum Smith](https://radiopaedia.org/?lang=us)
+    [Case courtesy of Callum Smith](https://radiopaedia.org/articles/pneumonia)
 """)
-expander.image("./images/1.jpg")
+expander.image("./images/1.jpg", width=300)
+expander.image("./images/2.jpg", width=300)
+expander.image("./images/3.jpg", width=300)
+expander.image("./images/4.jpg", width=300)
+expander.image("./images/5.jpg", width=300)
 
 # upload file
 file = st.file_uploader('', type=['jpeg', 'jpg', 'png'])

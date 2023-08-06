@@ -14,13 +14,22 @@ st.title('Pneumonia Classification App')
 # set header
 st.header('Please upload a chest X-ray image')
 
-expander = st.expander("Try Example Images?")
-expander.write("""
-    The following images can be used to check the model.
-    
-    [Case courtesy of Callum Smith](https://radiopaedia.org/articles/pneumonia)
-""")
-expander.image("./images/1.jpg", width=300)
+tab1, tab2, tab3 = st.tabs(["Cat", "Dog", "Owl"])
+
+with tab1:
+   st.header("Normal")
+   st.write("[Case courtesy of Callum Smith](https://radiopaedia.org/articles/pneumonia)")
+   st.image("./images/normal.jpg", width=400)
+
+with tab2:
+   st.header("Suspicious/Initial")
+   st.write("[Case courtesy of Callum Smith](https://radiopaedia.org/articles/pneumonia)")
+   st.image("./images/suspicious.jpg", width=400)
+
+with tab3:
+   st.header("Severe")
+   st.write("[Case courtesy of Callum Smith](https://radiopaedia.org/articles/pneumonia)")
+   st.image("./images/severe.jpg", width=400)
 
 # upload file
 file = st.file_uploader('', type=['jpeg', 'jpg', 'png'])

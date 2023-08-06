@@ -15,7 +15,7 @@ st.title('Pneumonia classification')
 st.header('Please upload a chest X-ray image')
 
 # upload file
-file = st.file_uploader('', type=['jpeg', 'jpg'Pp, 'png'])
+file = st.file_uploader('', type=['jpeg', 'jpg', 'png'])
 
 # load classifier
 model = load_model('./model/pneumonia_classifier.h5')

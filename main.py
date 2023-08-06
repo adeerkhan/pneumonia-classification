@@ -17,9 +17,10 @@ st.header('Please upload a chest X-ray image')
 expander = st.expander("Try Example Images?")
 expander.write("""
     The following images can be used to check the model.
-    Case courtesy of Callum Smith, <a href="https://radiopaedia.org/?lang=us">Radiopaedia.org</a>.
+    
+    [Case courtesy of Callum Smith](https://radiopaedia.org/?lang=us)
 """)
-expander.image("https://radiopaedia.org/articles/pneumonia")
+expander.image("./images/1.jpg")
 
 # upload file
 file = st.file_uploader('', type=['jpeg', 'jpg', 'png'])

@@ -19,7 +19,7 @@ expander.write("""
     The following images can be used to check the model.
     Case courtesy of Callum Smith, <a href="https://radiopaedia.org/?lang=us">Radiopaedia.org</a>.
 """)
-expander.image("./images/1.jpg")
+expander.image("https://radiopaedia.org/articles/pneumonia")
 
 # upload file
 file = st.file_uploader('', type=['jpeg', 'jpg', 'png'])

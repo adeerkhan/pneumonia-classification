@@ -32,7 +32,7 @@ streamlit run app.py
 The app should launch in your web browser, allowing you to interact with it and perform medical diagnoses using the image-based deep learning algorithms.
 
 Conclusion
-This Streamlit application showcases the capabilities of the deep learning model presented in the research paper for diagnosing medical conditions based on retinal OCT images. The user-friendly interface makes it accessible to healthcare professionals and researchers, allowing them to obtain rapid and accurate diagnoses using AI-powered image analysis.
+This Streamlit application showcases the capabilities of the deep learning model presented in the research paper for diagnosing medical conditions through X-ray image analysis. The user-friendly interface makes it accessible to healthcare professionals and researchers, enabling them to obtain rapid and accurate pneumonia diagnoses using AI-powered image analysis.
 
 Please note that the research and model presented in this app belong to the authors of the original paper (source provided above). Our work involves deploying the model using Streamlit to make it accessible to a wider audience. We acknowledge and appreciate the efforts of the researchers in developing this groundbreaking approach to medical image analysis.
 

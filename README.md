@@ -7,9 +7,9 @@ This app is based on the research paper titled "Identifying Medical Diagnoses an
 The paper proposes a deep learning approach that utilizes convolutional neural networks (CNNs) for image analysis and classification. The CNN architecture allows the model to automatically learn relevant features from the images, eliminating the need for handcrafted object segmentation and manual feature engineering.
 
 Application and Focus
-The primary focus of this application is to demonstrate the implementation of the research paper's deep learning algorithms for diagnosing medical conditions using image data. The model is particularly effective in analyzing retinal Optical Coherence Tomography (OCT) images, a critical imaging modality for guiding the diagnosis and treatment of various eye diseases, including age-related macular degeneration (AMD) and diabetic macular edema.
+The primary focus of this application is to demonstrate the implementation of the research paper's deep learning algorithms for diagnosing medical conditions using image data. The model excels in analyzing X-ray images for pneumonia detection, playing a crucial role in guiding accurate diagnoses and treatment strategies for this respiratory condition.
 
-By deploying this app using Streamlit, we enable users to interact with the deep learning model in a user-friendly way. Users can upload their own retinal OCT images, and the model will provide real-time diagnoses for AMD and diabetic macular edema based on the image analysis.
+By deploying this app using Streamlit, we enable users to interact with the deep learning model in a user-friendly way. Users can upload their own X-ray images, and the model will provide real-time diagnoses based on the image analysis.
 
 Getting Started
 To use the application, follow these steps:

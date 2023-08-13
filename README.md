@@ -23,6 +23,7 @@ pip install -r requirements.txt
 Download the necessary data from the provided sources (if applicable):
 
 Data from https://www.cell.com/cell/fulltext/S0092-8674(18)30154-5#secsectitle0065
+
 Data from https://data.mendeley.com/datasets/rscbjbr9sj/2
 
 Once the dependencies are installed and the data is set up (if required), run the application using Streamlit:
